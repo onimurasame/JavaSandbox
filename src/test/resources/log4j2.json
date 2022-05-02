@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "name": "default",
+    "packages": "com.onimurasame",
+    "ThresholdFilter": {
+      "level": "all"
+    },
+    "appenders": {
+      "Console": {
+        "name": "STDOUT",
+        "PatternLayout": {
+          "pattern": "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "trace",
+        "AppenderRef": {
+          "ref": "STDOUT"
+        }
+      }
+    }
+  }
+}
